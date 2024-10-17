@@ -22,10 +22,41 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.btnGo = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnStart
+        '
+        Me.btnStart.Location = New System.Drawing.Point(273, 76)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(171, 95)
+        Me.btnStart.TabIndex = 0
+        Me.btnStart.Text = "Press here"
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
+        'btnGo
+        '
+        Me.btnGo.Location = New System.Drawing.Point(322, 266)
+        Me.btnGo.Name = "btnGo"
+        Me.btnGo.Size = New System.Drawing.Size(75, 23)
+        Me.btnGo.TabIndex = 1
+        Me.btnGo.Text = "Go"
+        Me.btnGo.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnGo)
+        Me.Controls.Add(Me.btnStart)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents btnStart As Button
+    Friend WithEvents btnGo As Button
 End Class
