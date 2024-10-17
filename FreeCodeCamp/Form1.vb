@@ -12,5 +12,28 @@
 
     Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
         MsgBox("welcome to vb .net prog course")
+
+        'sequence
+        MsgBox("welcome")
+        MsgBox("to")
+        MsgBox("vb")
+        MsgBox(".net")
+
+        MessageBox.Show("welcome to vb.net") 'object oriented approach
+
+    End Sub
+
+    Private Sub btnVariables_Click(sender As Object, e As EventArgs) Handles btnVariables.Click
+
+        Dim stFirstName As String
+        'st comes from string (name convention)
+        'dim = dimension (amount of memory set aside
+
+        stFirstName = "Kevin" '5 bytes
+
+        MsgBox(stFirstName)
+
+
+
     End Sub
 End Class
