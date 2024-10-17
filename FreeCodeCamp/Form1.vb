@@ -33,6 +33,12 @@
 
         MsgBox(stFirstName)
 
+        MsgBox("Hello and welcome " & stFirstName) 'string concatenation with &
+
+        MsgBox("Hello and welcome  " & stFirstName & " 'The Boss'") 'string concatenation with &
+
+        stFirstName = "Marc"
+        MsgBox("Hello and welcome " & stFirstName)
 
 
     End Sub
