@@ -42,4 +42,16 @@
 
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnDataTypes.Click
+        Dim stModel As String = "Ford"
+        Dim stMake As String = "Escort"
+        Dim iDoors As Integer = 5
+        Dim stColour As String = "Red"
+        Dim bTaxed As Boolean
+        Dim iEngineSize As Integer = "1200"
+        Dim decPrice As Decimal = 999.99
+
+
+    End Sub
 End Class
