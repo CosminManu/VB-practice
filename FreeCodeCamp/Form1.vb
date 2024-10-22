@@ -43,7 +43,7 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnDataTypes.Click
+    Private Sub btnDataTypes_Click(sender As Object, e As EventArgs) Handles btnDataTypes.Click
         Dim stModel As String = "Ford"
         Dim stMake As String = "Escort"
         Dim iDoors As Integer = 5
@@ -52,6 +52,29 @@
         Dim iEngineSize As Integer = "1200"
         Dim decPrice As Decimal = 999.99
 
+        Dim dtDateRegistered As Date = #11/2/2024# 'month/day/year
+
+        'concatenating with &
+        MsgBox("the car is " &
+               stMake & " " &
+               stModel & " " &
+               iDoors & " " &
+               stColour & " " &
+               bTaxed & " " &
+               iEngineSize & " " &
+               decPrice & " " &
+               dtDateRegistered)
+
+        'newline
+        MsgBox("the car is " & vbNewLine &
+               stMake & vbNewLine &
+               stModel & vbNewLine &
+               iDoors & vbNewLine &
+               stColour & vbNewLine &
+               bTaxed & vbNewLine &
+               iEngineSize & vbNewLine &
+               decPrice & vbNewLine &
+               dtDateRegistered)
 
     End Sub
 End Class
