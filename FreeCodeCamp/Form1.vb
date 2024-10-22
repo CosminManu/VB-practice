@@ -77,4 +77,14 @@
                dtDateRegistered)
 
     End Sub
+
+    Private Sub btnInput_Click(sender As Object, e As EventArgs) Handles btnInput.Click
+
+        Dim stFirstName As String = InputBox("please enter your name")
+
+        MsgBox("hello " & stFirstName)
+
+
+
+    End Sub
 End Class
