@@ -87,4 +87,22 @@
 
 
     End Sub
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+        Dim stFirstName As String
+        Dim stLastName As String
+        Dim stGender As String
+
+        stFirstName = txbFirstName.Text 'get the text from txtFirstName control and assign to variab
+        stLastName = txbLastName.Text
+        stGender = txbGender.Text
+
+        MsgBox("halloo " & stFirstName & " " & stLastName & " you are a " & stGender)
+
+        txbFirstName.Text = ""
+        txbLastName.Text = ""
+        txbGender.Text = ""
+
+
+    End Sub
 End Class
