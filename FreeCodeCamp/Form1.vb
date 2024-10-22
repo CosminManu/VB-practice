@@ -97,11 +97,28 @@
         stLastName = txbLastName.Text
         stGender = txbGender.Text
 
-        MsgBox("halloo " & stFirstName & " " & stLastName & " you are a " & stGender)
+        'MsgBox("halloo " & stFirstName & " " & stLastName & " you are a " & stGender)
 
         txbFirstName.Text = ""
         txbLastName.Text = ""
         txbGender.Text = ""
+
+
+        ' listbox
+        Dim stOccupation As String
+        stOccupation = lstOccupation.SelectedItem
+
+        MsgBox("halloo " & stFirstName & " " & stLastName & " you are a " & stGender & " of profession " & stOccupation)
+
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        lstOccupation.Items.Add("Proffession1")
+        lstOccupation.Items.Add("Proffession2")
+        lstOccupation.Items.Add("Proffession3")
+
 
 
     End Sub

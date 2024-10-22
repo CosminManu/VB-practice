@@ -34,6 +34,8 @@ Partial Class Form1
         Me.lblGender = New System.Windows.Forms.Label()
         Me.txbGender = New System.Windows.Forms.TextBox()
         Me.btnSave = New System.Windows.Forms.Button()
+        Me.lstOccupation = New System.Windows.Forms.ListBox()
+        Me.lblOccupation = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnStart
@@ -131,18 +133,39 @@ Partial Class Form1
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(110, 222)
+        Me.btnSave.Location = New System.Drawing.Point(110, 391)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(172, 32)
         Me.btnSave.TabIndex = 11
         Me.btnSave.Text = "Save values"
         Me.btnSave.UseVisualStyleBackColor = True
         '
+        'lstOccupation
+        '
+        Me.lstOccupation.FormattingEnabled = True
+        Me.lstOccupation.ItemHeight = 16
+        Me.lstOccupation.Items.AddRange(New Object() {"Doctor", "Lawyer", "Pilot", "Accountant", "Engineer"})
+        Me.lstOccupation.Location = New System.Drawing.Point(110, 213)
+        Me.lstOccupation.Name = "lstOccupation"
+        Me.lstOccupation.Size = New System.Drawing.Size(146, 148)
+        Me.lstOccupation.TabIndex = 12
+        '
+        'lblOccupation
+        '
+        Me.lblOccupation.AutoSize = True
+        Me.lblOccupation.Location = New System.Drawing.Point(27, 213)
+        Me.lblOccupation.Name = "lblOccupation"
+        Me.lblOccupation.Size = New System.Drawing.Size(75, 16)
+        Me.lblOccupation.TabIndex = 13
+        Me.lblOccupation.Text = "Occupation"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblOccupation)
+        Me.Controls.Add(Me.lstOccupation)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.lblGender)
         Me.Controls.Add(Me.txbGender)
@@ -174,4 +197,6 @@ Partial Class Form1
     Friend WithEvents lblGender As Label
     Friend WithEvents txbGender As TextBox
     Friend WithEvents btnSave As Button
+    Friend WithEvents lstOccupation As ListBox
+    Friend WithEvents lblOccupation As Label
 End Class
