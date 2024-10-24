@@ -122,4 +122,22 @@
 
 
     End Sub
+
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+
+        Dim iNumber1 As Integer
+        Dim iNumber2 As Integer
+        Dim iResult As Integer
+
+        iNumber1 = txtNum1.Text
+        iNumber2 = txtNum2.Text
+
+        iResult = iNumber2 + iNumber1
+
+        MsgBox(iNumber1.ToString + " + " + iNumber2.ToString + " = " + iResult.ToString)
+
+
+
+    End Sub
+
 End Class

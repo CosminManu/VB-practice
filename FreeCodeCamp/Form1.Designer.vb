@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnGo = New System.Windows.Forms.Button()
@@ -36,6 +36,9 @@ Partial Class Form1
         Me.btnSave = New System.Windows.Forms.Button()
         Me.lstOccupation = New System.Windows.Forms.ListBox()
         Me.lblOccupation = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.txtNum1 = New System.Windows.Forms.TextBox()
+        Me.txtNum2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnStart
@@ -159,11 +162,39 @@ Partial Class Form1
         Me.lblOccupation.TabIndex = 13
         Me.lblOccupation.Text = "Occupation"
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Location = New System.Drawing.Point(366, 332)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(107, 40)
+        Me.btnCalculate.TabIndex = 14
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
+        'txtNum1
+        '
+        Me.txtNum1.Location = New System.Drawing.Point(366, 277)
+        Me.txtNum1.Name = "txtNum1"
+        Me.txtNum1.Size = New System.Drawing.Size(143, 22)
+        Me.txtNum1.TabIndex = 15
+        Me.txtNum1.Text = "Enter first number"
+        '
+        'txtNum2
+        '
+        Me.txtNum2.Location = New System.Drawing.Point(366, 305)
+        Me.txtNum2.Name = "txtNum2"
+        Me.txtNum2.Size = New System.Drawing.Size(143, 22)
+        Me.txtNum2.TabIndex = 16
+        Me.txtNum2.Text = "Enter second number"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtNum2)
+        Me.Controls.Add(Me.txtNum1)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblOccupation)
         Me.Controls.Add(Me.lstOccupation)
         Me.Controls.Add(Me.btnSave)
@@ -199,4 +230,7 @@ Partial Class Form1
     Friend WithEvents btnSave As Button
     Friend WithEvents lstOccupation As ListBox
     Friend WithEvents lblOccupation As Label
+    Friend WithEvents btnCalculate As Button
+    Friend WithEvents txtNum1 As TextBox
+    Friend WithEvents txtNum2 As TextBox
 End Class
