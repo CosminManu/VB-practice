@@ -27,6 +27,11 @@ Partial Class Form1
         Me.btnOk = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnMessage = New System.Windows.Forms.Button()
+        Me.txtAddValue1 = New System.Windows.Forms.TextBox()
+        Me.txtAddValue2 = New System.Windows.Forms.TextBox()
+        Me.btnSum = New System.Windows.Forms.Button()
+        Me.lblAddEqual = New System.Windows.Forms.Label()
+        Me.txtSumAnswear = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblName
@@ -34,7 +39,7 @@ Partial Class Form1
         Me.lblName.AutoSize = True
         Me.lblName.Location = New System.Drawing.Point(56, 58)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(55, 20)
+        Me.lblName.Size = New System.Drawing.Size(44, 16)
         Me.lblName.TabIndex = 0
         Me.lblName.Text = "Name"
         '
@@ -72,11 +77,55 @@ Partial Class Form1
         Me.btnMessage.Text = "&Message"
         Me.btnMessage.UseVisualStyleBackColor = True
         '
+        'txtAddValue1
+        '
+        Me.txtAddValue1.Location = New System.Drawing.Point(59, 205)
+        Me.txtAddValue1.Name = "txtAddValue1"
+        Me.txtAddValue1.Size = New System.Drawing.Size(69, 22)
+        Me.txtAddValue1.TabIndex = 6
+        '
+        'txtAddValue2
+        '
+        Me.txtAddValue2.Location = New System.Drawing.Point(210, 205)
+        Me.txtAddValue2.Name = "txtAddValue2"
+        Me.txtAddValue2.Size = New System.Drawing.Size(69, 22)
+        Me.txtAddValue2.TabIndex = 7
+        '
+        'btnSum
+        '
+        Me.btnSum.Location = New System.Drawing.Point(143, 201)
+        Me.btnSum.Name = "btnSum"
+        Me.btnSum.Size = New System.Drawing.Size(43, 30)
+        Me.btnSum.TabIndex = 8
+        Me.btnSum.Text = "+"
+        Me.btnSum.UseVisualStyleBackColor = True
+        '
+        'lblAddEqual
+        '
+        Me.lblAddEqual.AutoSize = True
+        Me.lblAddEqual.Location = New System.Drawing.Point(299, 205)
+        Me.lblAddEqual.Name = "lblAddEqual"
+        Me.lblAddEqual.Size = New System.Drawing.Size(14, 16)
+        Me.lblAddEqual.TabIndex = 9
+        Me.lblAddEqual.Text = "="
+        '
+        'txtSumAnswear
+        '
+        Me.txtSumAnswear.Location = New System.Drawing.Point(331, 202)
+        Me.txtSumAnswear.Name = "txtSumAnswear"
+        Me.txtSumAnswear.Size = New System.Drawing.Size(69, 28)
+        Me.txtSumAnswear.TabIndex = 10
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtSumAnswear)
+        Me.Controls.Add(Me.lblAddEqual)
+        Me.Controls.Add(Me.btnSum)
+        Me.Controls.Add(Me.txtAddValue2)
+        Me.Controls.Add(Me.txtAddValue1)
         Me.Controls.Add(Me.btnMessage)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnOk)
@@ -94,4 +143,9 @@ Partial Class Form1
     Friend WithEvents btnOk As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents btnMessage As Button
+    Friend WithEvents txtAddValue1 As TextBox
+    Friend WithEvents txtAddValue2 As TextBox
+    Friend WithEvents btnSum As Button
+    Friend WithEvents lblAddEqual As Label
+    Friend WithEvents txtSumAnswear As TextBox
 End Class
