@@ -23,7 +23,6 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.btnOk = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -38,14 +37,6 @@ Partial Class Form1
         Me.lblName.Size = New System.Drawing.Size(55, 20)
         Me.lblName.TabIndex = 0
         Me.lblName.Text = "Name"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(104, 30)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(0, 16)
-        Me.Label2.TabIndex = 1
         '
         'txtName
         '
@@ -90,7 +81,6 @@ Partial Class Form1
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnOk)
         Me.Controls.Add(Me.txtName)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblName)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -100,7 +90,6 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents lblName As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents txtName As TextBox
     Friend WithEvents btnOk As Button
     Friend WithEvents btnExit As Button
